@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reborn</title>
+</head>
+<style>
+    body{
+        background-image: url("images/Pokymone.jpg");
+        backdrop-filter: blur(40%);
+    }
+    h1{
+        font-size: 4vw;
+        text-align: center;
+        color: rgb(133, 72, 173);
+    }
+    #paragraph{
+        font-size: 2vw;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    h2{
+        text-align: center;
+
+    }
+    #firstletter{
+        text-align: center;
+        font-size: 2vw;
+        color: rgb(52, 104, 32);
+        font-weight: 600;
+    }
+    #girls{
+        margin-left: 500px;
+        width: 300px;
+        border: none;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 20px 30px;
+    }
+    strong{
+        color: rgb(211, 0, 0);
+    }
+    #press{
+        font-size: 25px;
+        width: 200px;
+        height: 50px;
+        margin-left: 580px;
+        margin-top: 30px;
+        background-color: brown;
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    @media screen and (max-device-width: 480px) and (orientation: portrait) {
+        h1{
+            font-size: 5vw;
+        }
+        #paragraph{
+            font-size: 2.8vw;
+        }
+        #girls{
+            width: 190px;
+            margin-left: 90px;
+            padding: 10px 15px;
+            height: 20px;
+        }
+        #press{
+            width: 150px;
+            height: 40px;
+            margin-left: 130px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    }
+</style>
+<body>
+    <h1>Reborn</h1>
+    <p id="paragraph">After their breakup, Amal became more cautious about girls.
+        <br> He embraced his newfound freedom, doing things he wanted and savoring<br>
+         every moment of life. He also became a "punda," fully<br>
+          enjoying his independence and new experiences.<br><br>He became a complete
+           "KOZHI" himself. He start flert with girls,<br>
+           and those bitches fall for that..<br>
+           Also he strat his mission on college.<br><strong><br>"Girls Hunting"</strong><br><br>
+           He start to chase <strong>girls.</strong> He won in that mission</p>
+           <h2>Now we can see the <strong>CHICKS</strong> names and Images</h2>
+           <p id="firstletter">But you have to Guss the girls first letter</p>
+
+            <input list="AmalGirls"id="girls">
+            <datalist id="AmalGirls">
+                <option value="Laya" name="laya" id="laya">Laya</option>
+                    <option value="Alpha">Alpha</option>
+                        <option value="Adhithya">Adhithya</option>
+                            <option value="Gopika">Gopika</option>
+                                <option value="Anjana">Anjana</option>
+                                  <option value="LastPage">LastPage</option>
+            </datalist><br>
+            <form onsubmit="return authenticate(event)">
+            <input type="submit" value="Press It" id="press">
+        </form>
+        <script>
+            function authenticate(event){
+                var option = document.getElementById("girls").value.toLowerCase();
+                var form = event.target;
+
+                switch(option){
+                    case "laya":
+                        form.action ="laya.html";
+                        break;
+                        case "alpha":
+                            form.action ="alpha.html";
+                            break;
+                            case "adhithya":
+                                form.action ="adithya.html";
+                                break;
+                                case "gopika":
+                                    form.action ="gopika.html";
+                                    break;
+                                    case "anjana":
+                                        form.action ="anjana.html";
+                                        break;
+                                        case "lastpage":
+                                            form.action ="AmalSir.html"
+                                            break;
+                                        default:
+                                              alert("Incorrect girl name");
+                                              event.preventDefault();
+                                              return false;
+                }
+                return true;
+            }
+        </script>
+</body>
+</html>

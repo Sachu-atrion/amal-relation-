@@ -1,0 +1,101 @@
+body{
+    background-image: url("./images/Love.jpg");
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    margin: 0;
+}
+h1{
+    text-align: center;
+    padding-left: auto;
+    color: white;
+}
+#paragraph{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    width: auto;
+    padding-left: auto;
+    color: white;
+}
+strong{
+    color: black;
+}
+audio{
+    padding-left: 530px;
+    border-radius: 50px;
+    border:none;
+    background-color: transparent;
+    color: transparent;
+}
+#paragraph2{
+    padding-left: 400px;
+    font-size: 40px;
+    font-weight: 600;
+}
+#iframe{
+    margin-left: 400px;
+    overflow: hidden;
+}
+#submit{
+    font-size: 25px;
+    background: rgba(255, 0, 0, 0);
+    border: none;
+    padding-left: 330px;
+}
+h2{
+    text-align: center;
+    font-size: 3vw;
+    padding-left: auto;
+}
+#aftherClick{
+    text-decoration: none;
+    font-size: 2vw;
+    padding-left: 600px;
+    color: aqua;
+}
+.mainbody2{
+    height: 40px;
+}
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .mainbody{
+        margin-top: 50px;
+    }
+    body{
+        background-position: center;
+        background-size: cover;
+
+    }
+    h1{
+        font-size: 6vw;
+        padding: auto;
+        text-align: center;
+    }
+    #paragraph{
+        padding: auto;
+        font-size: 16px;
+    }
+    audio{
+        padding-left:150px;
+        width: 200px;
+    }
+    h2{
+        padding: auto;
+        font-size: 2.5vw;
+    }
+    #aftherClick{
+        font-size: 2.5vw;
+        padding-left: 200px;
+        color: rgb(255, 230, 0);
+    }
+    .mainbody2{
+        max-height: 100%;
+    }
+    #iframe{
+        width: 90%;
+        height: 310px;
+        margin-left: 25px;
+        
+    }
+    
+
+}
